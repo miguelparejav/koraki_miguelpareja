@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koraki | Home</title>
+    
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="container">
+             <div class="headerContainer">
+            <div class="headerLeftItem">
+                <img src="./Images/branding/favLogo.jpg" class="img-fluid" alt="Favorites">
+                <h1 class="headerText">my favs</h1>
+            </div>
+            <div class="headerLogoItem">
+                <img src="./Images/branding/korakiLogo.jpg" class="img-fluid" alt="korakiLogo">
+            </div>
+            <div class="headerRightItem">
+                <div>
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+                </div>
+                <div>
+                    <p>Sing In</p>
+                </div>
+                <div >  
+                    <img src="./Images/branding/shoppCartLogo.JPG" alt="shoppCart">
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>  
+    <main>
+        <div class="navContainer">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./Pages/new_collection.html">New Collection</a></li>
+                    <li><a href="./Pages/undies.html">Undies</a></li>
+                    <li><a href="./Pages/lingerie.html">Lingerie</a></li>
+                    <li><a href="./Pages/accessories.html">Accesories</a></li>
+                    <li><a href="./Pages/sale.html">Sale</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="videoSection">
+            <iframe width="220" height="auto" src="https://www.youtube.com/embed/6_bjM-u7vJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <section id="section1">
+            <h2 class="animate__animated animate__bounce animate__heartBeat display-5">Most Loved Items</h2>
+            <div class="section1Container">
+                <div class="subTitles">
+                    <h3 class="animate__animated animate__bounce animate__flash">Undies</h3>
+                    <img src="Images/products/undies1.jpg" class="img-fluid" alt="undies">
+                </div>
+                <div class="subTitles">
+                    <h3 class="animate__animated animate__bounce animate__flash">Lingerie</h3>
+                    <img src="Images/products/malla1.jpg" class="img-fluid" alt="malla">
+                </div>
+                <div class="subTitles">
+                    <h3 class="animate__animated animate__bounce animate__flash">Accessories</h3>
+                    <img src="Images/products/accessories1.jpg" class="img-fluid" alt="accessories">
+                </div>
+            </div>   
+        </section>
+        <section id="section2">
+            <h2 class="animate__animated animate__bounce animate__heartBeat">Born For The Shout Out!</h2>
+            <div class="igFans">
+                <img src="Images/products/fan1.jpg" class="img-fluid" alt="Fan 1">
+                <img src="Images/products/fan2.jpg" class="img-fluid" alt="Fan 2">
+                <img src="Images/products/fan3.jpg" class="img-fluid" alt="Fan 3"> 
+                <img src="Images/products/fan4.jpg" class="img-fluid" alt="Fan 4">
+                <img src="Images/products/fan5.jpg" class="img-fluid" alt="Fan 5">         
+            </div>   
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <div  class="contactSection">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Help</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Contact Us</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="footerLogos">
+                <img src="./Images/branding/igLogo.jpg" class="img-fluid" alt="IG">
+                <img src="./Images/branding/fbLogo.jpg" class="img-fluid" alt="FB">
+                <img src="./Images/branding/twLogo.jpg" class="img-fluid" alt="TW">
+                <img src="./Images/branding/wpLogo.jpg" class="img-fluid" alt="WA">
+            </div>
+        </div>
+        <section class="footer2">
+            <form action="" method="GET">
+                <fieldset class="newsLetter">
+                    <legend class="legend">Do you want to subscribe to our Newsletter?</legend>
+                    <br>
+    
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Name Surname" required>
+                    <br><br>
+    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="info@ejemplo.com" required>
+                    <br><br>
+    
+                    <label for="curso">Which news would you like to receive (You can select all?)</label>
+                    <input type="radio" name="newCollection"> New Collections <input type="radio" name="discounts"> Discounts <input type="radio" name="korakiBlog">Koraki Blog
+                    <br><br>
+    
+                    <input type="submit" value="Subscribe">
+                    <br><br>
+                </fieldset>
+            </form>
+        </section>
+    </footer>
+</body>
+</html>

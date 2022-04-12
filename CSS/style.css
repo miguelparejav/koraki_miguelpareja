@@ -1,0 +1,977 @@
+/*Style Settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Syncopate', sans-serif;
+    font-stretch: narrower;
+    text-transform: uppercase;
+    padding: 30px;
+
+}
+
+header .headerContainer {
+    display: grid;
+    grid-template-rows: 10px;
+    grid-template-columns: 25% auto 25%;
+    background-color: white;
+    row-gap: 5px;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+header .headerLeftItem {
+    justify-self: left;
+    font-size: 0.2rem;
+    padding: 5px;
+}
+
+header .headerLeftItem img{
+    width: 13px;
+    height: 10px;
+    justify-content: space-between;
+    margin: 0.0px;
+    padding: 0.5px;
+}
+
+header .headerLogoItem {
+    justify-self: center;
+}
+
+header .headerLogoItem img{
+    width: auto;
+    height: 60px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.headerLogoItem:hover img {
+    height: 180px;
+    width: auto;
+}
+
+header .headerRightItem {
+    justify-self: right;
+    display: flex;
+    font-size: 0.4rem;
+    padding: 5px;
+    border: 5px;
+}
+
+header .headerRightItem img{
+    width: 17px;
+    height: 17px;
+    justify-content: space-between;
+    margin: 0.5px;
+    padding: 0.5px;
+}
+
+main .menu ul {
+    list-style: none;
+    background-image: url(../Images/branding/ravenFeather.jpg);
+    height: 8px;
+    padding: 8px;
+    justify-content: center;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+main .menu ul li {
+
+    text-transform: uppercase;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.5rem;
+    justify-content: space-evenly;
+}
+
+main .menu ul li a {
+    text-decoration: none;
+    color: cornsilk;
+    padding: 3px;
+
+}
+
+main .menu a:hover {
+    background: rgb(63, 62, 68);
+
+}
+
+main .videoSection {
+    text-align: center;
+    background-image: url(../Images/branding/ravenFeather.jpg);
+    background-repeat: repeat;
+}
+
+#section1{
+    background-color: whitesmoke;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Syncopate', sans-serif;
+    font-stretch: normal;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+#section2{
+    background-color: rgb(28, 24, 32);
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Syncopate', sans-serif;
+    font-stretch: normal;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: ivory;
+}
+
+section .igFans {
+    margin: 5px;
+    justify-content: space-evenly;
+    height: 50px;
+    width: auto;
+    display: flex;
+}
+
+.section1Container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1px;
+    column-gap: 1px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.subTitles {
+    display: inline;
+    background-image: linear-gradient(to right, grey,black);
+    color: ivory;
+    padding: 5px;
+    margin: 5px;
+}
+
+.subTitles h3{
+    font-family: 'Syncopate', sans-serif;
+    font-stretch: narrower;
+    text-transform: uppercase;
+    text-align: center;   
+    padding-top: 5px;
+}
+
+.subTitles img {
+    height: 50px;
+    width: auto;
+    margin: 10px;
+}
+
+footer .footer1 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 25%;
+    grid-template-rows: 10px;
+    align-items: center;
+    height: 30px;
+    row-gap: 5px;
+    column-gap: 5px;
+    justify-content: space-between;
+    align-content: center;
+    animation-name: lgbti;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+footer .footer1 img{
+    width: 10px;
+    height: 10px;
+    justify-content: space-between;
+    margin: 0.5px;
+    padding: 0.5px;
+}
+
+footer .footerLogos {
+    position: absolute;
+    right: 0;
+    padding: 5px;
+}
+
+footer .footerLogos img {
+    height: 15px;
+    width: auto;
+}
+
+footer .footerLogos:hover img {
+    height: 20px;
+    width: auto;
+}
+
+@keyframes lgbti {
+    0% {
+        background: rgba(255, 0, 0, 0.87);
+    }
+    16.6% {
+        background: rgba(255, 166, 0, 0.918);
+    }
+    33.2% {
+        background: rgba(255, 255, 0, 0.904);
+    }
+    49.8% {
+        background: rgba(0, 128, 0, 0.884);
+    }
+    66.4% {
+        background: rgba(0, 0, 255, 0.856);
+    }
+    83.6% {
+        background: rgba(87, 3, 87, 0.938);
+    }
+    100% {
+        background: white;
+    }
+}
+
+footer .contactSection {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+}
+
+footer .contactSection ul li{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(58, 57, 73);
+    display: inline;
+    padding: 5px;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+footer .footer2 {
+    background-image: url(../Images/branding/ravenFeather.jpg);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 0.2rem;
+}
+
+footer .newsLetter {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    color: ivory;
+    border-width: 7px;
+    border-style: double;
+    border-color: rgb(231, 229, 206);
+    padding: 5px;
+    font-size: 0.4rem;
+    background-image: linear-gradient(to left, ivory,black);
+}
+
+footer .legend {
+    padding: 5px;
+}
+
+.placeholder {
+    font-family: 'Syncopate', sans-serif;
+    font-size: xx-small;
+}
+
+.mainTittle {
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 3px;
+    font-family: 'Syncopate', sans-serif;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.ncProducts {
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 25% auto;
+    background-color: white;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.ncProducts1 {
+    color: rgb(27, 27, 27);
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ncProducts1 ul li{
+    text-align: left;
+    padding: 8px;
+    font-family: 'Syncopate', sans-serif;
+    font-stretch: normal;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+.ncPhotos img {
+    height: 80px;
+    width: auto;
+    margin: 5px;
+    justify-content: space-evenly;
+    display: inline;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: narrower;
+        text-transform: uppercase;
+        padding: 60px;
+    }
+
+    header .headerContainer {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 25% auto 25%;
+        background-color: white;
+        row-gap: 10px;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    header .headerLeftItem {
+        justify-self: left;
+        display: flex;
+        font-size: 0.6rem;
+        padding: 10px;
+    }
+
+    header .headerLeftItem img{
+        width: 33px;
+        height: 28px;
+        justify-content: space-between;
+        margin: 2px;
+        padding: 0.5px;
+    }
+
+    header .headerLogoItem {
+        justify-self: center;
+    }
+
+    header .headerLogoItem img{
+        width: auto;
+        height: 150px;
+        justify-content: center;
+        border: 10px;
+        padding: 10px
+    }
+
+    .headerLogoItem:hover img {
+        height: 200px;
+        width: auto;
+        padding: 25px;
+    }
+
+    header .headerRightItem {
+        justify-self: right;
+        display: flex;
+        font-size: 0.9rem;
+        padding: 5px;
+       }
+
+    header .headerRightItem img{
+        width: 32px;
+        height: 32px;
+        justify-content: space-between;
+        margin: 1px;
+        padding: 1px;
+    }
+
+    main .menu ul {
+        list-style: none;
+        background-image: url(../Images/branding/ravenFeather.jpg);
+        height: 35px;
+        padding: 8px;
+        justify-content: center;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+
+    main .menu ul li {
+
+        text-transform: uppercase;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 1rem;
+        justify-content: space-evenly;
+    }
+
+    main .menu ul li a {
+        text-decoration: none;
+        color: cornsilk;
+        padding: 16px;
+
+    }
+
+    main .menu a:hover {
+        background: rgb(63, 62, 68);
+
+    }
+
+    main .videoSection {
+        text-align: center;
+        background-image: url(../Images/branding/ravenFeather.jpg);
+        background-repeat: repeat;
+    }
+
+    #section1{
+        background-color: whitesmoke;
+        height: 350px;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: normal;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    #section2{
+        background-color: rgb(28, 24, 32);
+        height: 250px;
+        text-align: center;
+        padding: 15px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: normal;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: ivory;
+    }
+
+    section .igFans {
+        margin: 5px;
+        justify-content: space-between;
+        height: 150px;
+        width: auto;
+        display: flex;
+    }
+
+    .section1Container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1px;
+        column-gap: 1px;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .subTitles {
+        display: inline;
+        background-color: rgb(28, 24, 32);
+        color: ivory;
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .subTitles h3{
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: narrower;
+        text-transform: uppercase;
+        text-align: center; 
+        padding: 15px;
+    }
+
+    .subTitles img {
+        height: 150px;
+        width: auto;
+        margin: 10px;
+    }
+
+    @keyframes lgbti {
+        0% {
+            background: rgba(255, 0, 0, 0.87);
+        }
+        16.6% {
+            background: rgba(255, 166, 0, 0.918);
+        }
+        33.2% {
+            background: rgba(255, 255, 0, 0.904);
+        }
+        49.8% {
+            background: rgba(0, 128, 0, 0.884);
+        }
+        66.4% {
+            background: rgba(0, 0, 255, 0.856);
+        }
+        83.6% {
+            background: rgba(87, 3, 87, 0.938);
+        }
+        100% {
+            background: white;
+        }
+    }
+
+    footer .footer1 {
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto 25%;
+        grid-template-rows: 10px;
+        align-items: center;
+        height: 40px;
+        row-gap: 5px;
+        column-gap: 5px;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    footer .footer1 img{
+        width: 15px;
+        height: 15px;
+        justify-content: space-between;
+        margin: 0.5px;
+        padding: 0.5px;
+    }
+
+    footer .footerLogos {
+        position: absolute;
+        right: 0;
+        padding: 12px;
+    }
+
+    footer .footerLogos img {
+        height: 15px;
+        width: auto;
+    }
+
+    footer .contactSection {
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+        padding: 10px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+    }
+
+    footer .contactSection ul li{
+        text-decoration: none;
+        list-style: none;
+        color: rgb(58, 57, 73);
+        display: inline;
+        padding: 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    footer .footer2 {
+        background-image: url(../Images/branding/ravenFeather.jpg);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 0.8rem;
+    }
+
+    footer .newsLetter {
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+        color: ivory;
+        border-width: 7px;
+        border-style: double;
+        border-color: rgb(231, 229, 206);
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    footer .legend {
+        padding: 5px;
+    }
+
+    .placeholder {
+        font-family: 'Syncopate', sans-serif;
+        font-size: xx-small;
+    }
+
+    .mainTittle {
+        background-color: whitesmoke;
+        text-align: center;
+        padding-top: 3px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: expanded;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    
+    .ncProducts {
+        background-color: whitesmoke;
+        text-align: center;
+        padding-top: 5px;
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: 25% auto;
+        background-color: white;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+    
+    .ncProducts1 {
+        color: rgb(27, 27, 27);
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .ncProducts1 ul li{
+        text-align: left;
+        padding: 15px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: normal;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    
+    .ncPhotos img {
+        height: 150px;
+        width: auto;
+        margin: 5px;
+        justify-content: space-evenly;
+        display: inline;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: narrower;
+        text-transform: uppercase;
+        padding: 100px;
+    }
+
+    header .headerContainer {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 25% auto 25%;
+        background-color: white;
+        row-gap: 15px;
+        column-gap: 15px;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    header .headerLeftItem {
+        justify-self: left;
+        display: flex;
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    header .headerLeftItem img{
+        width: 33px;
+        height: 28px;
+        justify-content: space-between;
+        margin: 2px;
+        padding: 0.5px;
+    }
+
+    header .headerLogoItem {
+        justify-self: center;
+    }
+
+    header .headerLogoItem img{
+        width: auto;
+        height: 200px;
+        justify-content: center;
+        border: 10px;
+        padding: 20px
+    }
+
+    .headerLogoItem:hover img {
+        height: 280px;
+        width: auto;
+    }
+
+    header .headerRightItem {
+        justify-self: right;
+        display: flex;
+        font-size: 1rem;
+        padding: 5px;
+        align-items: center;
+        margin: 5px;
+       }
+
+    header .headerRightItem img{
+        width: 32px;
+        height: 32px;
+        justify-content: space-between;
+        margin: 1px;
+        padding: 1px;
+    }
+
+    main .menu ul {
+        list-style: none;
+        background-image: url(../Images/branding/ravenFeather.jpg);
+        height: 45px;
+        padding: 15px;
+        justify-content: space-evenly;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+
+    main .menu ul li {
+        text-transform: uppercase;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 1.8rem;
+        justify-content: space-evenly;
+    }
+
+    main .menu ul li a {
+        text-decoration: none;
+        color: cornsilk;
+        padding: 20px;
+
+    }
+
+    main .menu a:hover {
+        background: rgb(63, 62, 68);
+
+    }
+
+    main .videoSection {
+        text-align: center;
+        background-image: url(../Images/branding/ravenFeather.jpg);
+        background-repeat: repeat;
+    }
+
+    #section1{
+        background-color: whitesmoke;
+        height: 500px;
+        text-align: center;
+        padding: 30px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: normal;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    #section2{
+        background-color: rgb(28, 24, 32);
+        height: 400px;
+        text-align: center;
+        padding: 15px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: normal;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: ivory;
+    }
+
+    section .igFans {
+        margin: 5px;
+        justify-content: space-between;
+        height: 300px;
+        width: auto;
+        display: flex;
+        align-content: center;
+    }
+
+    .section1Container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1px;
+        column-gap: 1px;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .subTitles {
+        display: inline;
+        background-color: rgb(28, 24, 32);
+        color: ivory;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .subTitles h3{
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: narrower;
+        text-transform: uppercase;
+        text-align: center; 
+        padding: 10px;
+    }
+
+    .subTitles img {
+        height: 250px;
+        width: auto;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    @keyframes lgbti {
+        0% {
+            background: rgba(255, 0, 0, 0.87);
+        }
+        16.6% {
+            background: rgba(255, 166, 0, 0.918);
+        }
+        33.2% {
+            background: rgba(255, 255, 0, 0.904);
+        }
+        49.8% {
+            background: rgba(0, 128, 0, 0.884);
+        }
+        66.4% {
+            background: rgba(0, 0, 255, 0.856);
+        }
+        83.6% {
+            background: rgba(87, 3, 87, 0.938);
+        }
+        100% {
+            background: white;
+        }
+    }
+
+    footer .footer1 {
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto 25%;
+        grid-template-rows: 10px;
+        align-items: center;
+        height: 50px;
+        row-gap: 5px;
+        column-gap: 5px;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    footer .footer1 img{
+        width: 25px;
+        height: 25;
+        justify-content: space-between;
+        margin: 0.5px;
+        padding: 0.5px;
+    }
+
+    footer .footerLogos {
+        position: absolute;
+        right: 0;
+        padding: 12px;
+    }
+
+    footer .footerLogos img {
+        height: 30px;
+        width: auto;
+    }
+
+    footer .contactSection {
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+        padding: 10px;
+        height: 50px;
+        position: absolute;
+    }
+
+    footer .contactSection ul li{
+        text-decoration: none;
+        list-style: none;
+        color: rgb(58, 57, 73);
+        display: inline;
+        padding: 5px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    footer .footer2 {
+        background-image: url(../Images/branding/ravenFeather.jpg);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    footer .newsLetter {
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+        color: ivory;
+        border-width: 7px;
+        border-style: double;
+        border-color: rgb(231, 229, 206);
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    footer .legend {
+        padding: 5px;
+    }
+
+    .placeholder {
+        font-family: 'Syncopate', sans-serif;
+        font-size: xx-small;
+    }
+
+    .mainTittle {
+        background-color: whitesmoke;
+        text-align: center;
+        padding-top: 3px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: expanded;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+    }
+    
+    .ncProducts {
+        background-color: whitesmoke;
+        text-align: center;
+        padding-top: 5px;
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: 25% auto;
+        background-color: white;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+    
+    .ncProducts1 {
+        color: rgb(27, 27, 27);
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .ncProducts1 ul li{
+        text-align: left;
+        padding: 30px;
+        font-family: 'Syncopate', sans-serif;
+        font-stretch: normal;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    
+    .ncPhotos img {
+        height: 250px;
+        width: auto;
+        margin: 5px;
+        justify-content: space-evenly;
+        display: inline;
+    }
+}
